@@ -1,0 +1,60 @@
+$grey: #404040;
+$light: #F4F6F7;
+$green: #218c74;
+$orange: #ff7d59;
+
+.container {
+    margin: 20px auto;
+    background: $grey;
+    width: 320px;
+    padding: 50px 20px;
+    border-radius: 15px;
+    border: 7px solid $light;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    .row {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        .output {
+            margin: 0px 10px 35px 10px;
+            padding: 10px 10px 10px 20px;
+            width: 250px;
+            font-size: 20px;
+            background: $green;
+            color: white;
+            cursor: auto;
+            border: 3px solid $light;
+            border-radius: 4px;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: white;
+            }
+        }
+        button {
+            border: 2px solid $grey;
+            color: $grey;
+            background: $light;
+            padding: 5px 10px;
+            margin: 2px;
+            font-size: 20px;
+            text-align: center;
+            width: 60px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: .15s;
+            &:hover {
+                border: 2px solid $orange;
+            }
+            &.equal {
+                background: $orange;
+                color: white;
+            }
+        }
+    }
+}

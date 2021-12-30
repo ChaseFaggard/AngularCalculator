@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+
+$poppins: 'Poppins', sans-serif;
+$bg-img: url(https://wallpaperaccess.com/full/5011513.png);
+
+*{
+    box-sizing: border-box;
+    font-family: $poppins;
+}
+
+body {
+    background: $bg-img center center fixed;
+}
